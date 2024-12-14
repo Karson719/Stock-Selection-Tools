@@ -22,7 +22,7 @@ def main():
             if register_user(email, password, CREDENTIALS_FILE):
                 print("Registration successful!")
             else:
-                print("This email is already registered.")
+                print("Please try again!")
 
         elif choice == '2':
             email = input("Enter your email: ")
@@ -104,3 +104,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
