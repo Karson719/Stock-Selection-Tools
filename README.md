@@ -29,5 +29,5 @@ The Stock Selection Tool is a Python program designed to analyze historical stoc
 1. Open a terminal or command prompt.
 2. Clone this repository to your local machine:
    ```bash
-   git clone https://github.com/Karson719/stock-selection-tool.git
+   git clone https://github.com/Karson719/Stock-Selection-Tools
    cd stock-selection-tool
