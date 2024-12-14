@@ -29,5 +29,25 @@ The Stock Selection Tool is a Python program designed to analyze historical stoc
 1. Open a terminal or command prompt.
 2. Clone this repository to your local machine:
    ```bash
-   git clone https://github.com/Karson719/Stock-Selection-Tools
+   git clone https://github.com/Karson719/stock-selection-tool.git
    cd stock-selection-tool
+
+## **Enviroonment Setup**
+1.  Open a terminal in the project directory.
+2.  Install the necessary libraries:
+     ```bash
+        pip install pandas yfinance
+
+Pandas: For data manipulation and CSV file operations.
+YFinance: For fetching historical stock market data.
+
+## **Project Structure**
+The project consists of the following files:
+ ```bash
+    .
+    ├── main.py              # Main script to run the program
+    ├── functions.py         # Helper functions for registration, authentication, and analysis
+    ├── user_credentials.csv # File to store user credentials (created automatically)
+    ├── user_data.csv        # File to store user interaction data (created automatically)
+    └── README.md            # Instructions for setup and usage
+
