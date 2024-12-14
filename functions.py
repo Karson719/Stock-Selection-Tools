@@ -5,6 +5,11 @@ import csv
 
 def register_user(email, password, credentials_file):
     """Register a new user and store their credentials securely."""
+    # Validate email format
+    if "@" not in email:
+        print("Invalid email format. Please include '@' in your email address.")
+        return False
+    
     # Check if credentials file exists and read it
     users = {}
     if os.path.exists(credentials_file):
@@ -21,6 +26,7 @@ def register_user(email, password, credentials_file):
             writer.writerow([email, password])
         return True
     else:
+        print("This email is already registered.")
         return False
 
 def authenticate_user(email, password, credentials_file):
